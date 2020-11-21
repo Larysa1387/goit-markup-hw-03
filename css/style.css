@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -5,7 +16,6 @@
   --primary-white-color: #FFFFFF;
   --primary-background: #F5F4FA;
   --accent-background: #2F303A;
-
 }
 
 body {
@@ -130,7 +140,6 @@ h2, h3 {
 
 .footer {
   background-color: var(--accent-background);
-
 }
 
 .address .link {
