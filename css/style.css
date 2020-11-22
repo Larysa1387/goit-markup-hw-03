@@ -140,13 +140,16 @@ h2, h3 {
   background-color: var(--accent-color);
 }
 
-.about-us, .team-title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+/* Features */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -154,11 +157,34 @@ h2, h3 {
 }
 
 .feature-item {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
 }
 
+/* block about us */
+
+.about-us.section {
+  padding-top: 0;
+}
+
+.about-us.title, .team-title {
+    margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+ }
+
+
+/* block team */
+
 .team-member {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -166,6 +192,9 @@ h2, h3 {
 }
 
 .team-position {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.9;
   /* text-align: center; */
@@ -174,7 +203,15 @@ h2, h3 {
 /* footer style */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--accent-background);
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .address .link {
