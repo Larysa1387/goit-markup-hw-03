@@ -30,13 +30,30 @@ a {
   text-decoration: none;
 }
 
+/* Утилиты */
+
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid tomato;
+
+}
+
+/* Nav style */
+
 .logo {
+  margin-right: 93px;
+
   font-family: Raleway;
   font-weight:700;
   font-size: 26px;
@@ -48,17 +65,13 @@ a {
   color: var(--accent-color);
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+.main-nav {
+  display: flex;
+  align-items: center;
 
-  outline: 2px solid tomato;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
-/* Nav style */
 
 .nav.list {
   display: flex;
@@ -66,7 +79,15 @@ a {
 
 .nav.list .item:not(:last-child) {
   margin-right: 50px;
-  background-color: tomato;
+}
+
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-contacts.list .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav .link {
@@ -147,6 +168,14 @@ h2, h3 {
   padding-bottom: 94px;
 }
 
+.features.list {
+  display: flex;
+}
+
+.features.list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -168,6 +197,12 @@ h2, h3 {
 .about-us.section {
   padding-top: 0;
 }
+
+.about-us.list {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .about-us.title,
 .team-title {
