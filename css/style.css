@@ -169,14 +169,15 @@ h2, h3 {
   padding-top: 0;
 }
 
-.about-us.title, .team-title {
-    margin-top: 0;
+.about-us.title,
+.team-title {
+  margin-top: 0;
   margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
- }
+}
 
 
 /* block team */
@@ -206,10 +207,12 @@ h2, h3 {
   padding-top: 60px;
   padding-bottom: 60px;
 
+  color: var(--primary-white-color);
   background-color: var(--accent-background);
 }
 
 .footer .logo {
+  color: var(--primary-white-color);
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -217,7 +220,11 @@ h2, h3 {
 .address .link {
   font-size: 14px;
   line-height: 1.7;
-  color: var(--primary-text-color);
+  color: var(--primary-white-color);
+}
+
+.link.contacts {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* portfolio style */
