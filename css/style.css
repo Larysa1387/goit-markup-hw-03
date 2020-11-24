@@ -217,6 +217,11 @@ h2, h3 {
 
 /* block team */
 
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-member {
   margin-top: 0;
   margin-bottom: 0;
