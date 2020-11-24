@@ -269,6 +269,10 @@ h2, h3 {
 
 /* portfolio style */
 
+.none-title {
+  display: none;
+}
+
 button {
   font-family: inherit;
   font-weight: 500;
@@ -281,6 +285,12 @@ button:hover,
 button:focus{
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+}
+
+.products.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .products .product-title {
