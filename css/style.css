@@ -218,6 +218,7 @@ h2, h3 {
 .team {
   display: flex;
   justify-content: space-between;
+  background-color: var(--primary-background);
 }
 
 .team-member {
