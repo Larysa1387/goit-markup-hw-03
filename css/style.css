@@ -49,6 +49,15 @@ a {
 
 /* Nav style */
 
+.top-line {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   margin-right: 93px;
 
@@ -57,6 +66,8 @@ a {
   font-size: 26px;
   line-height: 1.19;
   color: var(--title-text-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .accent {
@@ -66,13 +77,6 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  height: 80px;
-
-  border-bottom: 1px solid #ECECEC;
-
-
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
 }
 
 .nav.list {
@@ -106,7 +110,7 @@ a {
 }
 
 .nav .link.current {
-  color: var(--title-text-color);
+  color: var(--accent-color);
 }
 
 .nav-contacts .link {
@@ -228,31 +232,29 @@ h2, h3 {
   background-color: var(--primary-background);
 }
 
+.team .align {
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
 .team-member {
   margin-top: 0;
   margin-bottom: 0;
 
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
 }
 
 .team-position {
   margin-top: 0;
   margin-bottom: 0;
-
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
-}
-
-.team .align {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .team .item {
+  background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
    0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -279,6 +281,11 @@ h2, h3 {
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-white-color);
+  font-style: normal;
+}
+
+.address.list .list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .link.contacts {
@@ -287,8 +294,17 @@ h2, h3 {
 
 /* portfolio style */
 
-.none-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 button {
@@ -325,7 +341,13 @@ button:focus{
 .products.list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+  margin: -15px;
+
+}
+
+.products .item {
+  margin: 15px;
 }
 
 .products .product-title {
@@ -347,6 +369,10 @@ button:focus{
   color: var(--primary-text-color);
 }
 
+/* .products .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */
+
 .products .align {
   box-sizing: border-box;
   padding: 20px 24px;
@@ -357,8 +383,4 @@ button:focus{
 
 .link-image {
   display: block;
-}
-
-.products .item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 50px;
 }
